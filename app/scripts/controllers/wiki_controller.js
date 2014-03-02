@@ -1,0 +1,1 @@
+Website.WikiController = Em.ObjectController.extend();

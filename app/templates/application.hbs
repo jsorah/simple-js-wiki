@@ -1,0 +1,31 @@
+
+    
+<div>
+    <nav class="top-bar" data-topbar>
+        <ul class="title-area">
+            <li class="name"><h1><a href="#">Simple JS Wiki (via EmberJS)</a></h1></li>
+            <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+        </ul>
+
+        <section class="top-bar-section"></section>
+    </nav>
+    
+    
+    <div class="container panel" id="main">
+        <div class="row collapse">
+            <div class="large-3 small-2 columns">
+                <div>
+                    <strong>Things you can do.</strong>
+                    <ul class="side-nav">
+                    
+                    <li>{{#link-to "wikis"}}Wiki List{{/link-to}}</li>
+                    <li>{{#link-to "wikinew"}}New Wiki{{/link-to}}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="large-9 small-10 columns ">
+                {{outlet}}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+<h1>Listing Wikis</h1>
+
+<table>
+
+    <thead><th>Title</th>
+    <th>Author</th></thead>
+    <tbody>
+    {{#each wikientry in controller}}
+        <tr>
+            <td>
+                {{#link-to "wiki" wikientry.id }}
+                    {{wikientry.title}}
+                {{/link-to}}
+            </td>
+            <td>{{wikientry.author}}</td>
+        </tr>
+        
+    {{else}}
+        Nada holmes.
+    {{/each}}
+
+    </tbody>
+
+</table>

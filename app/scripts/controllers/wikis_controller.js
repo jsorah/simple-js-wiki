@@ -1,0 +1,1 @@
+Website.WikisController = Ember.ArrayController.extend();
