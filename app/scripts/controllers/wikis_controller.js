@@ -1,1 +1,1 @@
-Website.WikisController = Ember.ArrayController.extend();
+Website.WikisController = Em.ArrayController.extend();

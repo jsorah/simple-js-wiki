@@ -1,8 +1,8 @@
 <h3>New Wiki entry</h3>
-<form {{action "save" on="submit"}}>
-    <p>{{view Ember.TextField valueBinding="model.author" placeholder="Whats your name?"}}</p>
-    <p>{{view Ember.TextField valueBinding="model.title" placeholder="Title?"}}</p>
-    <p>{{view Ember.TextArea valueBinding="model.content" placeholder="What do you want to fill out here?"}}</p>
+<form {{action "createWikientry" on="submit"}}>
+    <p>{{input type="text" value=newAuthor placeholder="Whats your name?"}}</p>
+    <p>{{input type="text" value=newTitle placeholder="Title?"}}</p>
+    <p>{{textarea value=newContent placeholder="What do you want to fill out here?"}}</p>
     
     <p><button>Create Wiki Entry</button></p>
 </form>
@@ -10,5 +10,5 @@
 
 <p>Preview</p>
 <div class="panel">
-    {{markdown model.content}}
+    {{markdown newContent}}
 </div>

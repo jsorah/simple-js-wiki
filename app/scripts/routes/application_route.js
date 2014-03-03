@@ -1,5 +1,1 @@
-Website.ApplicationRoute = Ember.Route.extend({
-
-});
-
-
+Website.ApplicationRoute = Em.Route.extend();
