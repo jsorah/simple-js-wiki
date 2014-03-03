@@ -13,3 +13,11 @@ Website.IndexView = Ember.View.extend({
         this.$().foundation();
     }
 });
+
+
+Ember.Handlebars.helper('markdown', function (text) {
+    if(!text) 
+        return "";
+    
+    return  new Handlebars.SafeString(markdown.toHTML(text));
+});
