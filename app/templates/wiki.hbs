@@ -15,6 +15,7 @@
 <div>
     {{#if editing}}
         <button {{action 'saveChanges'}}>Save</button>
+        <button {{action 'cancel'}}>Cancel</button>
     {{else}}
         <button {{action 'edit'}}>Edit</button>
     {{/if}}
