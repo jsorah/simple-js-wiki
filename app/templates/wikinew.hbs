@@ -2,7 +2,7 @@
 <form {{action "createWikientry" on="submit"}}>
     <p>{{input type="text" value=newAuthor placeholder="Whats your name?"}}</p>
     <p>{{input type="text" value=newTitle placeholder="Title?"}}</p>
-    <p>{{textarea value=newContent placeholder="What do you want to fill out here?"}}</p>
+    <p>{{textarea value=newWikiContent placeholder="What do you want to fill out here?"}}</p>
     
     <p><button>Create Wiki Entry</button></p>
 </form>
@@ -10,5 +10,5 @@
 
 <p>Preview</p>
 <div class="panel">
-    {{markdown newContent}}
+    {{markdown newWikiContent}}
 </div>

@@ -3,7 +3,19 @@
 <p>Created: {{dateFormat model.created}}</p>
 <p>Updated: {{dateFormat model.modified}}</p>
 
+{{#if editing}}
+    {{textarea value=model.wikiContent}}
 
+{{/if}}
 <div class="panel">
-    {{markdown model.content}}
+    {{markdown model.wikiContent}}
+</div>
+
+
+<div>
+    {{#if editing}}
+        <button {{action 'saveChanges'}}>Save</button>
+    {{else}}
+        <button {{action 'edit'}}>Edit</button>
+    {{/if}}
 </div>
