@@ -7,7 +7,6 @@ Website.WikinewController = Em.ArrayController.extend({
             if(!title || !title.trim()) {return;}
             
             var author = this.get('newAuthor');
-            
             if(!author || !author.trim()) {return;}
             
             var content = this.get('newContent');
